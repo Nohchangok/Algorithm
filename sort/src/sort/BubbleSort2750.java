@@ -45,7 +45,8 @@ public class BubbleSort2750 {
 				}
 
 			}
-
+			
+			//배열 초기 세팅값이 0이므로, 마지막 배열 값이 0이 아닐경우 STOP.
 			if (numberList[size - 1] != 0) {
 				break;
 			}
