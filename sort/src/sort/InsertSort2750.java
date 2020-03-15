@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class BubbleSort2750 {
+public class InsertSort2750 {
 
 	public static void main(String[] args) {
 
