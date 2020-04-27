@@ -31,10 +31,10 @@ public class Test {
 			Thread.sleep(2500);
 			System.out.println("실행하려는 메뉴번호를 선택하세요.\n1. 문제 리스트 보기\n2. 종료");
 			System.out.print("번호 입력 : ");
-			System.out.println();
 			
 			try {
 				number = Input.nextInt(); //try catch해주기
+				System.out.println("------------------------------------------");
 			}
 			catch(Exception e) {
 				System.out.println("잘못 입력하였습니다. 다시 입력해주세요.");
@@ -45,8 +45,10 @@ public class Test {
 					for (int i=0; i < algoListTest.size(); i++) {
 						System.out.println((i+1)+". "+algoListTest.get(i));
 					}
+					System.out.println("------------------------------------------");
 					System.out.print("실행하려는 문제 번호 입력 : ");
 					number = Input.nextInt();
+					System.out.println("------------------------------------------");
 					algoListTest.get(number-1).print(); //array리스트참고
 					//부모클래스만들어서 문제들 상속받기
 					break;

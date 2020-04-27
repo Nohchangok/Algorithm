@@ -62,19 +62,24 @@ public class InsertSort2750 {
 //		오름차순으로 넣을 arrayList 생성.
 		int changeNum;
 
-		for (int i = 0; i < size - 1; i++) {
-			for (int j = 0; j < size - 1; j++) {
-				if (numberList[j] > numberList[j + 1]) {
+		for (int i = 1; i < size; i++) {
+			for (int j = i-1; j >= 0; j--) {
+				if (numberList[j] > numberList[j+1]) {
 					changeNum = numberList[j];
-					numberList[j] = numberList[j + 1];
-					numberList[j + 1] = changeNum;
+					numberList[j] = numberList[j+1];
+					numberList[j+1] = changeNum;
 				}
 			}
+			System.out.print(i+"번째 : ");
+			for (int list : numberList) {
+				System.out.print(list + " ");
+			}
+			System.out.println();
 		}
 
-		for (int i : numberList) {
-			System.out.print(i + " ");
-		}
+//		for (int i : numberList) {
+//			System.out.print(i + " ");
+//		}
 		
 	}
 }
