@@ -16,15 +16,60 @@ public class 가장큰수 {
 	 * 제한 사항 numbers의 길이는 1 이상 100,000 이하입니다. numbers의 원소는 0 이상 1,000 이하입니다. 정답이 너무
 	 * 클 수 있으니 문자열로 바꾸어 return 합니다.
 	 * 
-	 * 출처 : 
+	 * 출처 : https://programmers.co.kr/learn/courses/30/lessons/42746
 	 */
 	
 	public static void main(String[] args) {
 		
-		String[] numbers = new String[] {"6", "10", "2"};
+		String[] numbers = new String[] {"3", "30", "34", "5", "9"};
+		ArrayList<Integer> Copy = new ArrayList<Integer>();
+		
+		int size = numbers.length;
+		int temp;
+		
+		
+		
+/*		for(int i = 0; i<size; i++) {
+			String number="";
+			number = numbers[i];
+			for(int j = 0; j<size; j++) {
+				if(i==j) {
+					continue;
+				}
+				number += numbers[j];
+			}
+			Copy.add(Integer.parseInt(number));
+			
+			number="";
+			number = numbers[i];
+			
+			for(int j = size-1; j>=0; j--) {
+				if(i==j) {
+					continue;
+				}
+				number += numbers[j];
+			}
+			Copy.add(Integer.parseInt(number));
+		}
+		System.out.println(Copy.toString());
+	
+		
+		for (int i = 1; i < Copy.size(); i++) {
+			for (int j = i-1; j >= 0; j--) {
+				if (Copy.get(j) > Copy.get(j+1)) {
+					temp = Copy.get(j);
+					Copy.set(j, Copy.get(j+1));
+					Copy.set(j+1,temp);
+				}
+			}
+			System.out.print(i+"번째 : ");
+			for (int k : Copy) {
+				System.out.print(k + " ");
+			}
+			System.out.println();
+		}
 
-		System.out.println(numbers[0]+numbers[1]+numbers[2]);
-
+		System.out.println("가장큰수는 ::: "+Copy.get(Copy.size()-1));
 	}
-
+*/
 }
